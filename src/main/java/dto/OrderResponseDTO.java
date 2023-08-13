@@ -7,15 +7,9 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.json.JSONPropertyIgnore;
 
 @Data
-@Builder
-@AllArgsConstructor
-@NoArgsConstructor
-@JsonInclude(JsonInclude.Include.NON_DEFAULT)
-@JsonIgnoreProperties(ignoreUnknown = true)
-public class OrderDTO {
+public class OrderResponseDTO {
 
     private boolean complete;
     private int id;
